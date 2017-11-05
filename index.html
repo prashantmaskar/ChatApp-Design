@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Chat WebApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="ven_lib/materialize/css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="main_container">
+            <header>
+                <nav class="white darken-4 z-depth-1" >
+                    <ul class="header-menu right">
+                        <li>
+                            <a href="" class="notification-menu">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="notification-menu">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user_profile.html">
+                                <img src="images/user-icon.jpg" class="circle user-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="navicon">
+                                <i class="fa fa-navicon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul id="nav-mobile" class="side-nav fixed custom-side-nav">
+                    <li>
+                        <div class="c_logo center-align">
+                            <img src="images/clogo.png" alt="company_logo">
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="c_button center-align">
+                            <button class="btn green"><i class="fa fa-edit"></i> Compose</button>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="b_space"></span>
+                    </li>
+                    <li class="side-menus">
+                        <a href="#" class="active">
+                            <i class="fa fa-envelope"></i> Inbox
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-plane"></i> Sent
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-edit"></i> Drafts
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-comments"></i> Chat
+                        </a> 
+                    </li>
+                    <li class="side-menus last">
+                        <a href="#">
+                            <i class="fa fa-list"></i> Task
+                        </a> 
+                    </li>
+
+                </ul>
+            </header>
+            <div id="main">
+
+                <div class="row">
+                    <div class="col m3 s12">
+                        <div class="card">
+                            <h1 class="card-title">Chat</h1>
+                            <div class="search">
+                                <div class="serach-wraper">
+                                    <input id="search" placeholder="search">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="ctab_switch">
+                                <div class="ctab_pchat chattablecell">
+                                    <span class="active-tab">People Chat</span>
+                                </div>
+                                <div class="ctab_pchat chattablecell">
+                                    <span>Group Chat</span>
+                                </div>
+                            </div>
+                            <div class="active_cusers">
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+                                <div class="chatuserlist">
+                                    <span class="chatuseravtar">
+                                        <img src="images/user-icon.jpg" alt="chat user" class="circle chatlist_pic">
+                                    </span>
+                                    <div class="chat_uinfo">
+                                        <span class="chat_username">Harsh Hajare <small class="pull-right">30 jun</small></span>
+                                        <span class="cuser_staus">Let me know what you think</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m6 s12">
+                        <div class="card">
+                            <div class="active-chat-user-block">
+                                <div class="user-block">
+                                    <div class="active-user-pf">
+                                        <img src="images/user-icon.jpg" class="circle">
+                                        <span class="username">Divan Raj</span>
+                                        <span class="user-loc">United Kingdom, London</span>
+                                    </div>
+                                </div>
+                                <div class="user-actions">
+                                    <div class="action-icon z-depth-1 green">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="action-icon z-depth-1 blue">
+                                        <i class="fa fa-video-camera"></i>
+                                    </div>
+                                    <div class="action-icon z-depth-1 grey">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat_messagecontainer">
+                            <div class="chat_msg">
+                                <img class="chat_img circle" src="images/user-icon.jpg">
+                                <div class="chat_msg_info">
+                                    <span class="chat_name">Prashant Maskar</span>
+                                    <span class="chat_timestamp">2 Min ago</span>
+                                </div>
+                                <div class="chat_msg_text z-depth-1 white">
+                                    Is this demo for company test? we have to complete fast
+
+                                </div>
+                            </div>
+                            <div class="chat_msg_self">
+                                <img class="chat_img circle" src="images/user-icon.jpg">
+                                <div class="chat_msg_info">
+                                    <span class="chat_name">Prashant Maskar</span>
+                                    <span class="chat_timestamp">2 Min ago</span>
+                                </div>
+                                <div class="chat_msg_text z-depth-1 blue white-text">
+                                    Is this demo for company test? we have to complete fast
+
+                                </div>
+                            </div>
+                            <div class="chat_msg_self">
+                                <img class="chat_img circle" src="images/user-icon.jpg">
+                                <div class="chat_msg_info">
+                                    <span class="chat_name">Prashant Maskar</span>
+                                    <span class="chat_timestamp">2 Min ago</span>
+                                </div>
+                                <div class="chat_msg_text z-depth-1 blue white-text">
+                                    Is this demo for company test? we have to complete fast
+
+                                </div>
+                            </div>
+                            <div class="chat_msg">
+                                <img class="chat_img circle" src="images/user-icon.jpg">
+                                <div class="chat_msg_info">
+                                    <span class="chat_name">Prashant Maskar</span>
+                                    <span class="chat_timestamp">2 Min ago</span>
+                                </div>
+                                <div class="chat_msg_text z-depth-1 white">
+                                    Is this demo for company test? we have to complete fast
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat_msg_formbox">
+                            <div class="card">
+                                <div class="row">
+                                    <form class="chatform">
+                                        <div class="col m12 s12 input-field">
+                                            <input type="text" class="chat_input" id="chat_input" >
+                                            <label for="chat_input">Type Message Here</label>
+                                        </div>
+                                        <div class="col m6 s6">
+                                            <div class="extara_option">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-paperclip"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-smile-o"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-picture-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s6">
+                                            <button class="btn blue pull-right">Replay</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m3 s12">
+                        <div class="card">
+                            <div class="task_container">
+                                <div class="taskbox">
+                                    <div class="task_title">
+                                        <h2>Upcoming Task <small class="pull-right"><i class="fa fa-ellipsis-h"></i></small></h2>
+                                    </div>
+                                    <div class="task_time_info">
+                                        <span class="task_date">
+                                            13 <br/>Feb
+                                        </span>
+                                        <span class="task_day">Today, 11:30AM</span>
+                                    </div>
+                                    <div class="task_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="task1">
+                                                <label for="task1">Dinner with Friend</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task2">
+                                                <label for="task2">Design of new website</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task3">
+                                                <label for="task3">Learn Angular Js</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task4">
+                                                <label for="task4">Learn Angular Js</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task5">
+                                                <label for="task5">Learn Angular Js</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="taskbox">
+
+                                    <div class="task_time_info">
+                                        <span class="task_date">
+                                            14<br/>Feb
+                                        </span>
+                                        <span class="task_day">Tomorrow, 11:30AM</span>
+                                    </div>
+                                    <div class="task_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="task11">
+                                                <label for="task11">Dinner with Friend</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task12">
+                                                <label for="task12">Design of new website</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task13">
+                                                <label for="task13">Learn Angular Js</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task14">
+                                                <label for="task14">Learn Angular Js</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task15">
+                                                <label for="task15">Learn Angular Js</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="task16">
+                                                <label for="task16">Learn Angular Js</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="ven_lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="ven_lib/materialize/js/materialize.js"></script>
+        <script>
+            $(document).ready(function (){
+             localStorage.setItem("fname","Prashant");
+             localStorage.setItem("lname","Maskar");
+             localStorage.setItem("email","prashantmaskar93@gmail.com");
+             localStorage.setItem("password","mhacker");
+             
+            });
+        </script>
+    </body>
+</html>

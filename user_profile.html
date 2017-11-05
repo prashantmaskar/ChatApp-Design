@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="ven_lib/materialize/css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="main_container">
+            <header>
+                <nav class="white darken-4 z-depth-1" >
+                    <ul class="header-menu right">
+                        <li>
+                            <a href="" class="notification-menu">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="notification-menu">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/user-icon.jpg" class="circle user-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="navicon">
+                                <i class="fa fa-navicon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul id="nav-mobile" class="side-nav fixed custom-side-nav">
+                    <li>
+                        <div class="c_logo center-align">
+                            <img src="images/clogo.png" alt="company_logo">
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="c_button center-align">
+                            <button class="btn green"><i class="fa fa-edit"></i> Compose</button>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="b_space"></span>
+                    </li>
+                    <li class="side-menus">
+                        <a href="#" class="active">
+                            <i class="fa fa-envelope"></i> Inbox
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-plane"></i> Sent
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-edit"></i> Drafts
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a> 
+                    </li>
+                    <li class="side-menus">
+                        <a href="#">
+                            <i class="fa fa-comments"></i> Chat
+                        </a> 
+                    </li>
+                    <li class="side-menus last">
+                        <a href="#">
+                            <i class="fa fa-list"></i> Task
+                        </a> 
+                    </li>
+
+                </ul>
+            </header>
+            <div id="main">
+                <div class="page_title">
+                    <h5>Account Setting</h5>
+                </div>
+                <div class="row marginlr20">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col m12 s12">
+                                <h2 class="ucard-title">Your Profile</h2>
+                            </div>
+                            <div class="uprofile_info">
+                                <div class="col m3 s12">
+                                    <div class="userpropic center-align">
+                                        <img src="images/user-icon.jpg" class="circle">
+                                    </div>
+                                    <div class="profile_actions center-align">
+                                        <span>
+                                            <i class="fa fa-retweet"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-times"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col m8 s12">
+                                    <div class="form_title">
+                                        <h2>General Info</h2>
+                                    </div>
+                                    <div class="userprofile_form">
+                                        <form id="user_from">
+                                            <div class="col m6 s12 input-field">
+                                                <input type="text" id="fname" required="">
+                                                <label for="fname">First Name</label>
+                                            </div>
+                                            <div class="col m6 s12 input-field">
+                                                <input type="text" id="lname" required="">
+                                                <label for="lname">Last Name</label>
+                                            </div>
+                                            <div class="col m6 s12 input-field">
+                                                <input type="email" id="email" required="">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                            <div class="col m6 change_email">
+                                                <a href="javascript:void(0);">Change Email</a>
+                                            </div>
+                                            <div class="col m4 s12 input-field">
+                                                <input type="password" id="pass" required="">
+                                                <label for="pass">Your Password</label>
+                                            </div>
+                                            <div class="col m4 s12 input-field">
+                                                <input type="password" id="npass" required="">
+                                                <label for="npass">New Password</label>
+                                            </div>
+                                            <div class="col m4 s12 input-field">
+                                                <input type="password" id="cpass" required="">
+                                                <label for="cpass">Confirm password</label>
+                                            </div>
+                                            <div class="col m12">
+                                                <button type="button" class="btn blue" id="ubtn">
+                                                    Save   
+                                                </button>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="ven_lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="ven_lib/materialize/js/materialize.js"></script>
+        <script>
+            $(document).ready(function() {
+                var fname = localStorage.getItem("fname");
+                var lname = localStorage.getItem("lname");
+                var email = localStorage.getItem("email");
+                var password = localStorage.getItem("password");
+                $("#fname").val(fname);
+                $("#lname").val(lname);
+                $("#email").val(email);
+                $("#pass").val(password);
+                $("#ubtn").on('click', function() {
+                    var ufname = $("#fname").val();
+                    var ulname = $("#lname").val();
+                    var uemail = $("#email").val();
+                    var uopass = $("#pass").val();
+                    var unpass = $("#npass").val();
+
+                    localStorage.setItem("fname", ufname);
+                    localStorage.setItem("lname", ulname);
+                    localStorage.setItem("email", uemail);
+                    localStorage.setItem("password", unpass);
+                });
+
+            });
+        </script>
+    </body>
+</html>
